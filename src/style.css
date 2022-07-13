@@ -1,0 +1,21 @@
+main {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  background-color: pink;
+}
+
+section:first-child {
+  display: grid;
+  text-align: center;
+  grid-template-columns: 1fr 2fr 1fr;
+  margin-bottom: 30px;
+}
+
+section:last-child {
+  display: grid;
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+}
