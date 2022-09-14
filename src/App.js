@@ -3,7 +3,7 @@ import getFromNumberApi from './api'
 
 function App() {
   const [counter, setCounter] = useState(0)
-  const [text, setText] = useState('Loading...')
+  const [text, setText] = useState()
 
   useEffect(() => {
     setText('Loading...')
@@ -15,9 +15,13 @@ function App() {
   return (
     <main>
       <section>
-        <button onClick={() => setCounter((prev) => prev - 1)}>Decrement</button>
-        <h1>{counter}</h1>
-        <button onClick={() => setCounter((prev) => prev + 1)}>Increment</button>
+        <button onClick={() => setCounter((prev) => prev - 1)}>decrement</button>
+        <div>
+          Counter:
+          <h1>{counter}</h1>
+        </div>
+
+        <button onClick={() => setCounter((prev) => prev + 1)}>increment</button>
       </section>
 
       <section>{text}</section>
@@ -26,3 +30,14 @@ function App() {
 }
 
 export default App
+
+// TDD: Test Driven Development
+// Component tests
+// Elements
+// Interact
+// Wait for rerenders
+// Side effects
+// Debugging
+// React Testing Library
+// Jest
+// JSDOM
